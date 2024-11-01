@@ -1,0 +1,15 @@
+Para criar os endpoints de Game
+1 - Criar os schemas de Game no Prisma (/prisma/schema.prisma)
+2 - Criar o model de Game em /src/domain/entity/Game.ts (ver o exemplo de Product)
+3 - Criar a interface de Repository em /src/domain/repositories/GameRepository.ts
+4 - Criar a implementação do Repository em /src/infra/repositories/GameRepository.ts
+5 - Conferir se o arquivo do módulo repository está correto /src/infra/repositories/_repository.module.ts
+6 - Criar os usecases de Game em /src/application/usecases/game (ver o exemplo de product). Valendo 10 pontos: criar testes unitários
+7 - Criar os controllers de Game em /src/presenter/controller/game.controller.ts (ver o exemplo de product).
+
+
+
+Criar endpoins de User
+
+
+Criar endpoins de announcement

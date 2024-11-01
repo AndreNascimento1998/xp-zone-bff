@@ -1,3 +1,4 @@
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger'
 import { VersioningType } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 import { NestFactory } from '@nestjs/core'
@@ -17,6 +18,16 @@ async function bootstrap() {
     app.enableVersioning({
         type: VersioningType.URI,
     })
+
+    const swaggerConfig = new DocumentBuilder()
+        .setTitle('XP Games - BFF API')
+        .setDescription('API de retorno para provimento de informações para o FrontEnd')
+        .setVersion('1.0')
+        .addBearerAuth()
+        .build()
+
+    const document = SwaggerModule.createDocument(app, swaggerConfig)
+    SwaggerModule.setup('api', app, document)
 
     await app.listen(appPort)
     console.log(' ---------------------------------------------------- ')

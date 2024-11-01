@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common'
 import { PrismaModule } from '@/infra/database/prisma/prisma.module'
 import { ProductRepository } from '@/infra/repository/product.repository'
+import { UserRepository } from '@/infra/repository/user.repository'
 import { PrismaService } from '@/infra/database/prisma/prisma.service'
 
 const repositories = [
@@ -8,6 +9,10 @@ const repositories = [
     {
         provide: 'ProductRepositoryInterface',
         useClass: ProductRepository,
+    },
+    {
+        provide: 'UserRepositoryInterface',
+        useClass: UserRepository,
     },
 ]
 

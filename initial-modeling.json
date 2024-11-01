@@ -1,0 +1,113 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@email.com",
+            "password": "123456"
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "email": "jane@email.com",
+            "password": "123456"
+        },
+        {
+            "id": 3,
+            "name": "Alice Doe",
+            "email": "alice@email.com",
+            "password": "123456"
+        }
+    ],
+    "game" : [
+        {
+            "id": 1,
+            "title": "Super Mario Bros",
+            "genre": "Platformer",
+            "condition": "new",
+            "description": "The classic game of Mario",
+            "thumb": "https://www.mariowiki.com/images/thumb/9/99/Super_Mario_Bros._box.png/200px-Super_Mario_Bros._box.png"
+        },
+        {
+            "id": 2,
+            "title": "The Legend of Zelda",
+            "genre": "Adventure",
+            "condition": "new",
+            "description": "The classic game of Zelda",
+            "thumb": "https://www.mariowiki.com/images/thumb/9/99/Super_Mario_Bros._box.png/200px-Super_Mario_Bros._box.png"
+        },
+        {
+            "id": 3,
+            "title": "Fifa 2020",
+            "genre": "Sports",
+            "condition": "used",
+            "description": "The classic game of soccer",
+            "thumb": "https://www.mariowiki.com/images/thumb/9/99/Super_Mario_Bros._box.png/200px-Super_Mario_Bros._box.png"
+        },
+        {
+            "id": 4,
+            "title": "Call of Duty",
+            "genre": "Shooter",
+            "condition": "used",
+            "description": "The classic game of war",
+            "thumb": "https://www.mariowiki.com/images/thumb/9/99/Super_Mario_Bros._box.png/200px-Super_Mario_Bros._box.png"
+        },
+        {
+            "id": 5,
+            "title": "Minecraft",
+            "genre": "Adventure",
+            "condition": "new",
+            "description": "The classic game of blocks",
+            "thumb": "https://www.mariowiki.com/images/thumb/9/99/Super_Mario_Bros._box.png/200px-Super_Mario_Bros._box.png"
+        },
+        {
+            "id": 6,
+            "title": "Fortnite",
+            "genre": "Shooter",
+            "condition": "new",
+            "description": "The classic game of battle royale",
+            "thumb": "https://www.mariowiki.com/images/thumb/9/99/Super_Mario_Bros._box.png/200px-Super_Mario_Bros._box.png"
+        }
+    ],
+    "announcement": [
+        {
+            "user": 1,
+            "games": [
+                {
+                    "game": 1,
+                    "price": 20
+                },
+                {
+                    "game": 2,
+                    "price": 30
+                }
+            ]
+        },
+        {
+            "user": 2,
+            "games": [
+                {
+                    "game": 3,
+                    "price": 40
+                },
+                {
+                    "game": 4,
+                    "price": 50
+                }
+            ]
+        },
+        {
+            "user": 3,
+            "games": [
+                {
+                    "game": 5,
+                    "price": 60
+                },
+                {
+                    "game": 6,
+                    "price": 70
+                }
+            ]
+        }
+    ]
+}
